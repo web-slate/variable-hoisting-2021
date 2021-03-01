@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
 <head>
-  <title>QR Code - using QRCode.js</title>
-  <script type="text/javascript" src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <title>Reference error example</title>
 </head>
 
 <body>
   <h1>Reference Error</h1>
-  <div id="qrcode"></div>
+  <p>This returns `ReferenceError: myFirstVariable is not defined` because `myFirstVariable` does not have any reference.</p>
   <script>
     console.log(myFirstVariable);
   </script>
