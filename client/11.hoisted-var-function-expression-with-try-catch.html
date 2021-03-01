@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Hoisted function expression example</title>
+</head>
+
+<body>
+  <h1>Hoisted function expression example</h1>
+  <script>
+    try {
+      greet();
+
+      var greet = function () {
+        document.write('Hello Buddy')
+      }
+    } catch (e) {
+      document.write(`<pre>${e}</pre>`)
+    }
+  </script>
+</body>
+
+</html>
