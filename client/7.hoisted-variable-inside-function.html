@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Hoisted Variable Inside function example</title>
+</head>
+
+<body>
+  <h1>Hoisted Variable Inside function example</h1>
+  <script>
+    var defaultValue = 'hello';
+    var actual = 'Hi Sir';
+
+    function greet() {
+      if (!defaultValue) {
+        return 'no default';
+      }
+
+      if (!actual) {
+        // return 'no actual';
+        var actual = defaultValue;
+      }
+
+      return actual;
+    }
+
+    document.write('greet: ', greet());
+  </script>
+</body>
+
+</html>
