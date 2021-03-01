@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Reference error example</title>
+  <style>
+    pre {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Reference Error</h1>
+  <script>
+    try {
+      document.write(myFirstVariable);
+    } catch (e) {
+      document.write(`<pre>${e}</pre>`)
+    }
+  </script>
+</body>
+
+</html>
