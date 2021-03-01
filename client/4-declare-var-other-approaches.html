@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Declare var other-approaches example</title>
+</head>
+
+<body>
+  <h1>Declare var other-approaches</h1>
+  <p>var is global scope variable</p>
+  <script>
+    var myStringVariable = 'myFirstValue'
+    document.write(myStringVariable);
+    // without `new` gives you the string (primitive) value of the passed parameter.
+    // var myStringVariable = String('myFirstValue')
+      // logically new String("myFirstValue") == new String("myFirstValue") will be false because both of them are different objects,
+      // typeof myStringVariable // "object"
+    // var myStringVariable = new String('myFirstValue')
+      // but String("myFirstValue") == String("myFirstValue") will be true because you are comparing primitives
+      // typeof myStringVariable // "string"
+  </script>
+</body>
+
+</html>
