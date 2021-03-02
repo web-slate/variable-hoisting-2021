@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Hoisted class example</title>
+  <style>
+    pre {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hoisted class example</h1>
+  <script>
+    try {
+      var rate = new juicer.getAppleJuiceRate();
+      document.write(rate);
+      
+      class juicer {
+        getAppleJuice() {
+          return '20'
+        }
+      }
+      // var rate = new juicer.getAppleJuiceRate();
+      // document.write(rate);
+    } catch (e) {
+      document.write(`<pre>${e}</pre>`)
+    }
+  </script>
+</body>
+
+</html>
